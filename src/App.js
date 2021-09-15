@@ -1,23 +1,17 @@
-import CharacterCard from './CharacterCard';
-class App extends Component {
-  render() {
-   return (
-    <div>
-     <CharacterCard value="h"/>
-     <CharacterCard value="i"/>
-    </div>
-   );
-  }
-}
+import React from "react";
+import WordCard from "./WordCard";
+import './App.css';
 const word = "Hello";
-class App extends Component {
-   render() {
-    return (
-     <div>
-      {
-        Array.from(word).map((c, i) => <CharacterCard value={c} key={i}/>)
-      }
-     </div>
-    );
-  }
+function App()
+{
+  return (
+    <div>
+          <a><h1>  HELLO GAME  </h1></a>
+          <p>
+              Advance Lab3SA03 Salma Butlam 6135512052
+          </p>
+          <WordCard value="hello"/>
+    </div>
+  );
 }
+export default App;
